@@ -31,12 +31,9 @@ header {
     padding: 15px;
 }
 
-.logo .center-circle {
-    height: 25px;
-    width: 25px;
-    background: #449dd1;
-    border-radius: 50%;
-    display: inline-block;
+.logo i {
+    font-size: 35px;
+    color: #449dd1;
 }
 
 .menu {
@@ -1212,7 +1209,7 @@ footer p {
 
     .menu {
         margin: 0;
-        margin-top: 88vh;
+        margin-top: 82vh;
         padding: 15px;
     }
 

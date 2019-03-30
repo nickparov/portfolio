@@ -11,6 +11,7 @@ $(document).ready(function () {
             scrollTop: $('.about').offset().top
         }, 1000)
     });
+
     $('.menu-item-box .menu-item').on('click', function (e) {
         e.preventDefault();
         $('.menu-item-box').removeClass('active');
@@ -19,6 +20,22 @@ $(document).ready(function () {
             scrollTop: $($(this).data('link')).offset().top
         }, 1000);
     });
+
+    $('.menu_like-link').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).data('link')).offset().top + 300
+        }, 1000);
+    });
+
+    $('.disabled-link').click(function(event) {
+        /* Act on the event */
+        event.preventDefault();
+    });
+
+    
+
+
 
     $('.section-link').on('click', function (e) {
         e.preventDefault();
