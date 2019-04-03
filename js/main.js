@@ -96,30 +96,31 @@ $(document).ready(function () {
     if ($('.projects-slider').length) {
         $('.projects-slider').slick({
             slidesToShow: 4,
-            slidesToScroll: 2,
-            dots: true,
-            centerMode: true,
+            infinite: true,
             focusOnSelect: true,
             responsive: [{
                 breakpoint: 992,
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    slidesToShow: 2
+                    slidesToShow: 2,
+                    infinite: true
                 }
             }, {
                 breakpoint: 768,
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    slidesToShow: 2
+                    slidesToShow: 2,
+                    infinite: true
                 }
             }, {
                 breakpoint: 480,
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    infinite: true
                 }
             }]
         });

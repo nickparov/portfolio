@@ -331,8 +331,6 @@ a:hover, a:focus {
 
 
 
-
-
 .hero-section {
     background-image: url('../img/bg-1.jpg');
     height: 100vh;
@@ -784,17 +782,18 @@ section.services {
     overflow: hidden;
     margin: 0px 15px;
     cursor: pointer;
+    -webkit-box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.75);
 }
+
 
 .project-img {
     overflow: hidden;
 }
-.project-img img {
-
-}
 
 .project-box:hover {
-    transform: translateY(5px);
+    /* transform: translateY(5px); */
 }
 
 .project-box img {
@@ -818,7 +817,6 @@ transition: 2s all ease;
 }
 
 .project-info {
-    margin-bottom: 30px;
     background: #2a2a2e;
     padding: 20px;
     margin-top: 5px;
