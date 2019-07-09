@@ -559,6 +559,10 @@ ul.social-media {
     text-align: center;
 }
 
+.social-media {
+    display: block !important;
+}
+
 .social-media a:hover {
     /* border-radius: 50%; */
     text-decoration: none;
