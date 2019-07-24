@@ -11,6 +11,13 @@ body {
 .sec-font {
     font-family: 'Titillium Web', sans-serif;
 }
+.bigger_font {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.skills_font {
+    font-weight: 600;
+}
 
 /* ------------ Start Header */
 header {
