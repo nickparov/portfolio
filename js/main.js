@@ -125,5 +125,76 @@ $(document).ready(function () {
             }]
         });
     }
+   
+
+    // Valentine
+    Valentine.celebrate();
     
+
+
 });
+
+const Valentine = (function() {
+
+  const codes = ['tissa2020', 'nikima168', 'lox1234', 'devochka'];
+  
+  function celebrate() {
+    // hide 
+    $(".hidden").hide();
+    // set up some css
+    if(window.innerWidth < 800) {
+      $("#SecretCode").css('font-size', "10px");
+      $("#ValentinesBtn").css('font-size', "10px");
+    }
+    // set up handlers
+    _setUpHandlers();
+  }
+
+  function _setUpHandlers() {
+    $("#ValentinesBtn").on('click', proccessSecretCode);
+  }
+
+  function _clearField() {
+    $("#SecretCode").val('').prop('readonly', false);;
+  }
+
+  function _showError(windowWidth) {
+    let message = "Incorrect code =<";
+    if(windowWidth < 800) message = "Слишком маленький экран =<";
+    $("#SecretCode").val(message).prop('readonly', true);
+    setTimeout(() => {
+      _clearField();
+    }, 1500);
+  }
+
+  function _GiveGift(code) {
+    $("#ValentinesRow").children().first().fadeOut('slow', function() {
+      const that = $(this);
+      $(this).fadeOut('slow', function() {
+        $("#" + code).slideDown(2000, function() {
+          setTimeout(() => {
+            $(this).slideUp(2000, function() {
+              $(that).fadeIn('slow');
+            });
+          }, 6000);
+        });
+      });
+    });
+    
+  }
+
+  function proccessSecretCode(e) {
+    // grab valentines field
+    const code = $("#SecretCode").val(),
+          windowWidth = window.innerWidth;
+    e.preventDefault();
+    // clear field
+    _clearField();
+    // validate code
+    codes.includes(code) ? _GiveGift(code) : _showError(windowWidth);
+  }
+
+  return {
+    celebrate
+  };
+})();
