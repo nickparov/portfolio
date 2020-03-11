@@ -127,10 +127,12 @@ $(document).ready(function () {
     }
    
 
-    Valentine.celebrate();
+    
 
 
 });
+Valentine.celebrate();
+
 
 const Valentine = (function() {
 
