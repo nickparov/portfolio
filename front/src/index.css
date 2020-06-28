@@ -7,7 +7,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  background-color: black;
+}
+
+.theme-dark {
+  background-color: rgba(44, 44, 46, 0.9) !important;
+  color: rgba(229, 229, 234, 0.9) !important;
+}
+
+.theme-light {
+  background-color: rgba(229, 229, 234, 0.9) !important;
+  color: rgba(44, 44, 46, 0.9) !important;
+}
+
+.figure-cover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s ease;
+
+  border-radius: 3px;
+}
+
+.figure-cover:hover  {
+  background-color: rgba(0,0,0,0.7);
+  /* transform: scale(1.03); */
+
+  cursor: pointer;
+
+}
+
+.figure-cover p {
+  font-size: 1.5em;
 }
