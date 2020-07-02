@@ -35,6 +35,8 @@ body {
   transition: all 0.3s ease;
 
   border-radius: 3px;
+
+  color: rgb(229, 229, 234);
 }
 
 .figure-cover:hover  {
@@ -47,4 +49,20 @@ body {
 
 .figure-cover p {
   font-size: 1.5em;
+}
+
+
+/* UTILS */
+
+.left-rounded {
+  border-radius: 10px 0px 0px 10px;
+}
+
+
+.right-rounded {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.rounded {
+  border-radius: 10px;
 }
