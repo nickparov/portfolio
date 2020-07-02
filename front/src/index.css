@@ -66,3 +66,13 @@ body {
 .rounded {
   border-radius: 10px;
 }
+
+
+/* General */
+.section-title {
+  border-bottom: 2px solid rgb(229, 229, 234);
+}
+
+#ongoing-section .section-title {
+  text-align: end;
+}

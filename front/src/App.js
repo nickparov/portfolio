@@ -19,6 +19,10 @@ import {
   Figure
 } from 'react-bootstrap';
 
+import {
+  ArrowBarDown
+} from 'react-bootstrap-icons';
+
 
 // const COLORS = {
 //   dark: "rgba(44, 44, 46, 0.9)",
@@ -39,74 +43,69 @@ export default function App() {
               <Jumbotron className={"text-center theme-dark"}>
                 <h1><Typist>Welcome to my Portfolio!</Typist></h1>
                 <p><Typist startDelay={1600}>Scroll down to see my projects!</Typist></p>
+                <ArrowBarDown size={"24"} />
               </Jumbotron>
           </Container>
 
-          <Jumbotron className={"theme-dark"}>
+          <Jumbotron className={"theme-dark"} id={"completed-section"}>
             <Container>
+              <h2 className={" section-title pb-3 mb-3"}>Completed</h2>
               <Row >
-                <Col md="2" className={"d-flex flex-column justify-content-center align-items-center left-rounded theme-light"}>
-                    <h4>Completed</h4>
-                </Col>
-                <Col md="5">
+                <Col md="4">
                     <Project 
                       title={"Course Tracker"} 
                       description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem."}  
                       progress={"100"} 
-                      color={"light"}
+                      color={"dark"}
                     />
                 </Col>
-                <Col md="5">
-                    <Figure style={{margin: "0px", position: "relative"}}>
-                      <Figure.Image
-                        style={{margin: "0px"}}
-                        fluid
-                        rounded
-                        alt="171x180"
-                        src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
-                      />
-                      <div className="figure-cover">
-                        <p className={"text-center"}>Course Tracker</p>
-                      </div>
-                    </Figure>
+                <Col md="4">
+                    <Project 
+                      title={"Course Tracker"} 
+                      description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem."}  
+                      progress={"100"} 
+                      color={"dark"}
+                    />
+                </Col>
+                <Col md="4">
+                    <Project 
+                      title={"Course Tracker"} 
+                      description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem."}  
+                      progress={"100"} 
+                      color={"dark"}
+                    />
                 </Col>
               </Row>
             </Container>
           </Jumbotron>
 
-          <Jumbotron className={"theme-dark"}>
+          <Jumbotron className={"theme-dark"} id={"ongoing-section"}>
             <Container>
+              <h2 className={"section-title pb-3 mb-3"}>Ongoing</h2>
               <Row >
-                <Col md="5">
-                    <Figure style={{margin: "0px", position: "relative"}}>
-                      <Figure.Image
-                        style={{margin: "0px"}}
-                        fluid
-                        rounded
-                        alt="171x180"
-                        src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
-                      />
-                      <div className="figure-cover">
-                        <p className={"text-center"}>Course Tracker</p>
-                      </div>
-                    </Figure>
+                <Col md="4">
+                    <Project 
+                      title={"Course Tracker"} 
+                      description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem."}  
+                      progress={"100"} 
+                      color={"dark"}
+                    />
                 </Col>
-                <Col md="5">
-                    <Figure style={{margin: "0px", position: "relative"}}>
-                      <Figure.Image
-                        style={{margin: "0px"}}
-                        fluid
-                        rounded
-                        alt="171x180"
-                        src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
-                      />
-                      <div className="figure-cover">
-                        <p className={"text-center"}>Course Tracker</p>
-                      </div>
-                    </Figure>
+                <Col md="4">
+                    <Project 
+                      title={"Course Tracker"} 
+                      description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem."}  
+                      progress={"100"} 
+                      color={"dark"}
+                    />
                 </Col>
-                <Col md="2" className={"d-flex flex-column justify-content-center align-items-center right-rounded theme-light"}>
-                    <h4>Ongoing</h4>
+                <Col md="4">
+                    <Project 
+                      title={"Course Tracker"} 
+                      description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem."}  
+                      progress={"100"} 
+                      color={"dark"}
+                    />
                 </Col>
               </Row>
             </Container>
